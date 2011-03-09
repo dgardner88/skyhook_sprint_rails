@@ -10,11 +10,11 @@ david = User.find_by_name('David')
 monje = User.find_by_name('Monje')
 gabi = User.find_by_name('Gabi')
 
-Store.create!(:name => "Bob's Corner Store", :type => 'Cupcakes')
+Store.create!(:name => "Trash and Vaudeville", :type => 'Clothing')
 
-bobs = Store.find_by_name("Bob's Corner Store")
+bobs = Store.find_by_name("Trash and Vaudeville")
 
-Deal.create(:title => "Free Cupcake for Blowjob", :store_id => bobs.id)
+Deal.create(:title => "Free Scarf with Purchase", :store_id => bobs.id)
 
 c4bj = Deal.find_by_store_id(bobs.id)
 

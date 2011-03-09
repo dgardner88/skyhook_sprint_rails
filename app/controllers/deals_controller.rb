@@ -43,6 +43,9 @@ class DealsController < ApplicationController
   # POST /deals.xml
   def create
     @deal = Deal.new(params[:deal])
+    Deal.find_all_by_store_id(@deal.store_id).each do |deal|
+    	deal.delete
+    end
 
     respond_to do |format|
       if @deal.save
