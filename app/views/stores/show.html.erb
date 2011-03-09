@@ -25,6 +25,16 @@
   <%= @store.type %>
 </p>
 
+<p>
+	<b>Deal: </b>
+	<%= @store.deal.title %>
+</p>
+
+<p>
+	<b> Users coming for deal: </b>
+	<%= render 'deals/users' %>
+</p>
+
 
 <%= link_to 'Edit', edit_store_path(@store) %> |
 <%= link_to 'Back', stores_path %>
