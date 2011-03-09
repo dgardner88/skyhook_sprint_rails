@@ -1,0 +1,17 @@
+class CreateStores < ActiveRecord::Migration
+  def self.up
+    create_table :stores do |t|
+      t.string :name
+      t.string :latitude
+      t.string :longitude
+      t.text :description
+      t.string :type
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :stores
+  end
+end

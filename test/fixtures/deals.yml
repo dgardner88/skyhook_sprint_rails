@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  price: MyString
+  product: MyString
+  expiration: MyString
+  range: 1
+  points: 1
+
+two:
+  title: MyString
+  description: MyText
+  price: MyString
+  product: MyString
+  expiration: MyString
+  range: 1
+  points: 1

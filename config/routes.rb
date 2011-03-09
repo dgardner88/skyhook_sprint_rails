@@ -1,4 +1,8 @@
 SkyhookSprintRails::Application.routes.draw do
+  resources :deals
+
+  resources :stores
+
   resources :users
 
   # The priority is based upon order of creation:

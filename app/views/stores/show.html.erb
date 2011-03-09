@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @store.name %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @store.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @store.longitude %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @store.description %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @store.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_store_path(@store) %> |
+<%= link_to 'Back', stores_path %>
