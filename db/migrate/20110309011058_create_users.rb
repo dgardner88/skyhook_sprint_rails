@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :latitude
       t.integer :points
       t.string :dealStatus
+      t.integer :deal_id
 
       t.timestamps
     end

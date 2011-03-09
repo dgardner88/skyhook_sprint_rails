@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110309015505) do
+ActiveRecord::Schema.define(:version => 20110309020516) do
 
   create_table "deals", :force => true do |t|
     t.string   "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20110309015505) do
     t.string   "expiration"
     t.integer  "range"
     t.integer  "points"
+    t.integer  "store_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20110309015505) do
     t.string   "latitude"
     t.integer  "points"
     t.string   "dealStatus"
+    t.integer  "deal_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -7,6 +7,7 @@ class DealsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @deals }
+      format.json { render :json => @deals }
     end
   end
 
@@ -18,6 +19,7 @@ class DealsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @deal }
+      format.json { render :json => @deal }
     end
   end
 

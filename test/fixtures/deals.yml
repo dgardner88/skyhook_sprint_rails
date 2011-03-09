@@ -8,6 +8,7 @@ one:
   expiration: MyString
   range: 1
   points: 1
+  store_id: 1
 
 two:
   title: MyString
@@ -17,3 +18,4 @@ two:
   expiration: MyString
   range: 1
   points: 1
+  store_id: 1
