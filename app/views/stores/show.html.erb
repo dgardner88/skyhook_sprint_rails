@@ -6,7 +6,8 @@
 <p>
 	<b>You're Flashing</b>
     <% if (@store.deal)  %>
-	<p><%= @store.deal.title %></p>
+	<h2><%= @store.deal.title %></h2>
+    <p><%= @store.deal.description %></p>
 
     <%= link_to 'Close this Deal', @store.deal, :confirm => 'Are you sure?', :method => :delete %>
 
