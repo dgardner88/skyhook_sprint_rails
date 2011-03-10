@@ -46,7 +46,8 @@ class DealsController < ApplicationController
     Deal.find_all_by_store_id(@deal.store_id).each do |deal|
     	deal.delete
     end
-    store = Store.find_by_id(@deal.store_id)
+    @deal.store_id = 1
+    store = Store.find_by_id(1)
 
     respond_to do |format|
       if @deal.save

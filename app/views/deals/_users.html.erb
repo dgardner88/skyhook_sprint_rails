@@ -2,17 +2,20 @@
     <% if !@store.deal.users.empty? %>
         <div id="streakrs">
             <b> Streakrs </b>
-            <table >
+            <div id="streakrList">
                 <% @store.deal.users.each do |user| %>
-                  <% if user== @store.deal.users.last %>
-                    <tr > <td class="streakr" id="last" > <%= user.name %> </td> </tr>
-                  <% else %>
-                    <tr > <td class="streakr"> <%= user.name %> </td> </tr>
-                  <% end %>
+                    <div class="streakr"> <%= user.name %>
+                    <div style="float: right;" > <%= user.dealStatus %></div> <br /></div>
                 <% end %>
-            </table>
+            </div>
         </div>
     <%else %>
-        <p> No one loves you :(</p>
+       <div id="streakrs">
+            <b> Streakrs </b>
+            <div id="streakrList">
+                <div class="streakr"> Nobody is currently streaking.
+                <div style="float: right;" > :(</div> <br /></div>
+            </div>
+        </div>
     <%end %>
 <% end %>

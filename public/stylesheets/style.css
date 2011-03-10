@@ -148,7 +148,7 @@ b {
     bottom: -150px;
 }
 
-#streakrs table{
+#streakrList{
     width: 335px;
     height: 270px;
     border: 3px #555 solid;
@@ -156,14 +156,18 @@ b {
 	-moz-border-radius:8px;
 }
 
+
 .streakr {
-    height: 1em;
-    width: 50px;
     border-bottom: 1px #555 solid;
-    padding: 0;
+    padding: 5px;
     margin: 0;
 }
 
 #last {
     border-bottom: none;
+}
+
+#new_deal {
+    width: 650px;
+    margin: auto;
 }

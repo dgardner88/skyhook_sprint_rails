@@ -10,14 +10,14 @@
       </ul>
     </div>
   <% end %>
-
+    
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
   </div>
-  <div class="field">
+  <div class="field" style="float:right;">
     <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :rows => 20 %>
   </div>
   <div class="field">
     <%= f.label :price %><br />
@@ -39,11 +39,11 @@
     <%= f.label :points %><br />
     <%= f.text_field :points %>
   </div>
-  <div class="field">
-    <%= f.label :store_id %><br />
-    <%= f.text_field :store_id %>
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+<div class="button">
+<a href="#">Use Recommendation Tools</a>
+</div>
