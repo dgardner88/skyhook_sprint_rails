@@ -14,9 +14,3 @@ Store.create!(:name => "Magnolia Bakery", :type => 'Clothing')
 
 bobs = Store.find_by_name("Magnolia Bakery")
 
-Deal.create(:title => "Free Party Hat!", :description => "I just really want a party hat, okay?", :store_id => bobs.id)
-
-c4bj = Deal.find_by_store_id(bobs.id)
-
-david.deal_id = c4bj.id
-david.save
