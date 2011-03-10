@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
+  skip_before_filter :verify_authenticity_token
+  
   def index
     @users = User.all
 
@@ -48,9 +50,11 @@ class UsersController < ApplicationController
       if @user.save
         format.html { redirect_to(@user, :notice => 'User was successfully created.') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
+        format.json { render :json => @user, :status => :created, :location => @user }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        format.json  { render :json => @user.errors, :status => :unprocessable_entity }
       end
     end
   end
