@@ -1,12 +1,16 @@
 <% if @store.deal %>
     <% if !@store.deal.users.empty? %>
-        <div>
+        <div id="streakrs">
             <b> Streakrs </b>
-            <ul class="user_list" >
+            <table >
                 <% @store.deal.users.each do |user| %>
-                    <li> <%= user.name %> </li>
+                  <% if user== @store.deal.users.last %>
+                    <tr > <td class="streakr" id="last" > <%= user.name %> </td> </tr>
+                  <% else %>
+                    <tr > <td class="streakr"> <%= user.name %> </td> </tr>
+                  <% end %>
                 <% end %>
-            </ul>
+            </table>
         </div>
     <%else %>
         <p> No one loves you :(</p>

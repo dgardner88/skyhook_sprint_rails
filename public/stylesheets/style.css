@@ -127,6 +127,10 @@ td#border{
     height: 559px;
 }
 
+#map img{
+    height: 559px;
+}
+
 .storeContent {
     height: 559px;
 }
@@ -137,4 +141,29 @@ textarea {
 
 b {
     font-size: 36px;
+}
+
+#streakrs {
+    position: relative;
+    bottom: -150px;
+}
+
+#streakrs table{
+    width: 335px;
+    height: 270px;
+    border: 3px #555 solid;
+    border-radius:8px;
+	-moz-border-radius:8px;
+}
+
+.streakr {
+    height: 1em;
+    width: 50px;
+    border-bottom: 1px #555 solid;
+    padding: 0;
+    margin: 0;
+}
+
+#last {
+    border-bottom: none;
 }
