@@ -82,6 +82,7 @@ div.button{
 	border:solid 3px #3ea9f5;
 	background-color:#FBB03B;
 	cursor:pointer;
+    text-align: center;
 }
 div.button:hover{
 	background-color:#F15B24;
