@@ -14,7 +14,7 @@ Store.create!(:name => "Trash and Vaudeville", :type => 'Clothing')
 
 bobs = Store.find_by_name("Trash and Vaudeville")
 
-Deal.create(:title => "Free Scarf with Purchase", :store_id => bobs.id)
+Deal.create(:title => "Free Party Hat!", :store_id => bobs.id)
 
 c4bj = Deal.find_by_store_id(bobs.id)
 

@@ -1,0 +1,140 @@
+body{
+	background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    right bottom,
+	    color-stop(0.07, #F15B24),
+	    color-stop(0.77, #FBB13B)
+	);
+	background-image: -moz-linear-gradient(
+	    left top,
+	    #F15B24 7%,
+	    #FBB13B 100%
+	);
+	font-family: helvetica, arial sans-serif;
+    color:#555;	
+}
+
+a{
+	color:#3ea9f5;
+}
+
+#content{
+	width:900px;
+	padding:15px;
+	margin: auto;
+	background-color:#fff;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	border:solid 3px #3ea9f5;
+	
+}
+#mainLogo{
+	position:relative;
+	left:50%;
+	margin-left:-270px;
+}
+
+#logoSmall {
+    float: right;
+}
+#businessLogo{
+    height: 126px;
+    float: left;
+}
+
+#storeinfo {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+#loginForm{
+	position:relative;
+	left:50%;
+	margin-left:-150px;
+}
+input.big{
+	width:300px;
+	height:40px;
+	font-size:1.4em;
+	color:#555;
+	margin:10px;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	border:solid 3px #3ea9f5;
+	
+}
+
+#footer{
+	position:absolute;
+	bottom:0px;
+	color:#fff;
+}
+.label{
+	color:#fff;
+}
+div.button{
+	padding:10px;
+	margin:10px;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	border:solid 3px #3ea9f5;
+	background-color:#FBB03B;
+	cursor:pointer;
+}
+div.button:hover{
+	background-color:#F15B24;
+}
+div.button a{
+	color:#fff;
+	font-size:1.4em;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+div.field input{
+	color:#555;	
+}
+#deal_description{
+	height:75px;
+}
+form.new_deal{
+	margin:15px;
+	padding:15px;
+}
+#header{
+    width: 900px;
+    height: 126px;
+    margin: 10px auto;  
+}
+#headerText{
+	font-size:1.4em;
+	padding:15px;
+	margin:15px;
+	float:right;
+}
+
+td#border{
+	border-right:4px solid #3ea9f5;
+
+}
+
+#map {
+    margin: 0;
+    padding: 0;
+    float: right;
+    height: 559px;
+}
+
+.storeContent {
+    height: 559px;
+}
+
+textarea {
+    color: #555;
+}
+
+b {
+    font-size: 36px;
+}

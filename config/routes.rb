@@ -1,4 +1,10 @@
 SkyhookSprintRails::Application.routes.draw do
+  get "page/home"
+
+  get "page/login"
+
+  get "page/about"
+
   resources :deals
 
   resources :stores

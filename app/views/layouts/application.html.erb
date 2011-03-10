@@ -9,12 +9,17 @@
 <body>
 
 <div id="header">
-  <%= image_tag  "tv.jpg" %>
-  <h1> Trash and Vaudeville </h1>
-  <p> New York, NY </p>
+  <%= image_tag "logo_small.png", :id => "logoSmall" %>
+  <%= image_tag  "tv.png", :id => "businessLogo"%>
+  <div id="storeinfo">
+    <h1> Trash and Vaudeville </h1>
+    <p> New York, NY </p>
+  </div>
 </div>
 
-<%= yield %>
+<div id="content">
+    <%= yield %>
+</div>
 
 </body>
 </html>

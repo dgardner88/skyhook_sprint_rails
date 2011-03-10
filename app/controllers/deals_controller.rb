@@ -46,10 +46,11 @@ class DealsController < ApplicationController
     Deal.find_all_by_store_id(@deal.store_id).each do |deal|
     	deal.delete
     end
+    store = Store.find_by_id(@deal.store_id)
 
     respond_to do |format|
       if @deal.save
-        format.html { redirect_to(@deal, :notice => 'Deal was successfully created.') }
+        format.html { redirect_to(store, :notice => 'Deal was successfully created.') }
         format.xml  { render :xml => @deal, :status => :created, :location => @deal }
       else
         format.html { render :action => "new" }
@@ -78,10 +79,12 @@ class DealsController < ApplicationController
   # DELETE /deals/1.xml
   def destroy
     @deal = Deal.find(params[:id])
+    s = @deal.store
     @deal.destroy
 
+
     respond_to do |format|
-      format.html { redirect_to(deals_url) }
+      format.html { redirect_to s }
       format.xml  { head :ok }
     end
   end
